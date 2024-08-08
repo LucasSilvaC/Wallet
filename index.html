@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Bosch.webp" type="image/png">
+    <link rel="stylesheet" href="Font.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>BoschPay</title>
+</head>
+<body>
+    <div>
+        <p class="texto">Qual valor recebido hoje?</p>
+        <div class="value" id="valor">R$ 00,00</div>
+        <button id="incrementar-0-117">M+</button>
+        <button id="incrementar-0-585">M+5x</button>
+        <button id="incrementar-7-06">H+</button>
+        <button id="incrementar-bosch">P+</button>
+        <button id="multiplicar-zero">0</button>
+        <input type="time" id="timeInput" />
+        <button onclick="addTime()">Adicionar</button>
+        <ul id="timeList"></ul>
+
+        <div class="container">
+            <img src="Img/dinheiro.webp" id="moving-image">
+            <div class="timer-container">   
+                <div class="timertext" id="timertext">Horas para acabar o expediente:</div>
+                <div class="timer" id="timer">Carregando...</div>
+            </div>
+            <div class="timer-container">
+                <div class="timertext" id="timertext15">Pagamento mais próximo:</div>
+                <div class="timer" id="timer15">Carregando...</div>
+            </div>
+            <div class="timer-container">
+                <div class="timertext" id="timertext30">Soma total do recebimento:</div>
+                <div class="timer" id="total-recebimentos">Carregando...</div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/script.js"></script>
+</body>
+</html>

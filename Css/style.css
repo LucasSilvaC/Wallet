@@ -1,0 +1,151 @@
+body {
+    font-family: 'Feather bold', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: auto; /* Permite o scroll */
+}
+
+.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+
+    33% {
+        color: rgb(0, 255, 0);
+    }
+
+    66% {
+        color: rgb(0, 0, 255);
+    }
+
+    100% {
+        color: rgb(255, 0, 0);
+    }
+}
+
+.texto {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: colorChange 3s infinite;
+}
+
+.container {
+    position: relative;
+    width: 90vw;
+    max-width: 1200px;
+    height: auto; 
+    min-height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#dvd-logo {
+    width: 10vw;
+    max-width: 150px;
+    height: auto;
+}
+
+#moving-image {
+    position: absolute;
+    width: 10vw;
+    max-width: 150px;
+    height: auto;
+    transition: left 0.1s linear, top 0.1s linear;
+}
+
+.timer-container {
+    border: 1px solid #000;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timer {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.timertext {
+    font-size: 1.25rem;
+    color: #000;
+}
+
+button {
+    width: 100%;
+    max-width: 200px; 
+    height: 3rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .texto {
+        font-size: 2rem;
+    }
+
+    .value {
+        font-size: 1.25rem;
+    }
+
+    .timer {
+        font-size: 1.25rem;
+    }
+
+    .timertext {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        max-width: none;
+        font-size: 0.875rem;
+    }
+    input[type="time"] {
+        width: 40%;
+    }
+}
+
+input[type="time"] {
+    width: 5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+ul {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.result {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
+}
