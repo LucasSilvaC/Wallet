@@ -1,8 +1,8 @@
-const incrementoPequeno = 0.11766666666666666666666666666667;
-const incrementoGrande = 7.06;
-const incrementoMedio = 0.585;
-const incrementoBosch = 28.24;
-const valorPorDiaUtil = 70.60; 
+const incrementoPequeno = 0.1006666666666667;
+const incrementoGrande = 6.04;
+const incrementoMedio = 0.5033333333333333;
+const incrementoBosch = 24.16;
+const valorPorDiaUtil = 60.434; 
 const dataInicial = new Date(2024, 6, 18); 
 
 function obterValorArmazenado() {
@@ -28,7 +28,7 @@ function multiplicarValorPorZero() {
     valorElement.textContent = `R$ 0,00`;
 }
 
-function atualizarValorAutomaticamente() {
+function atualizarValorAutomaticamente() {1208,68
     const now = new Date();
     if (now.getSeconds() === 0) {
         atualizarValor(incrementoPequeno);
